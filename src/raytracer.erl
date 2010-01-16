@@ -223,4 +223,4 @@ test(Width, Height) ->
     Light = {point_light, {{vector, {-20, 20, -20}}, 1.0, 100, {color, {255, 255, 255}}}},
     Light2 = {point_light, {{vector, {20, 20, -20}}, 1.0, 100, {color, {255, 0, 0}}}},
     Pixels = render([Sphere, Sphere2, Plane, Sphere3], Camera, [Light, Light2], Width, Height),
-    [io:format("~p~n", [P]) || P <- Pixels].
+    [io:format("~w~n", [P]) || P <- Pixels].
